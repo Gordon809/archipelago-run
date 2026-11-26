@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Archipelago Run — Island Mail Flight</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #060a1e;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  #wrap {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    display: block;
+    background: #060a1e;
+    outline: none;
+  }
+  #hint {
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720" tabindex="0"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
